@@ -35,6 +35,6 @@ appender("ABPMSERVICEWITHSTEP", RollingFileAppender) {
 }
 
 logger("cn.com.agree.abpm.AbpmService",INFO,["ABPMSERVICE"],false)
-logger("cn.com.agree.abpm.AbpmServiceWithStep",INFO,["ABPMSERVICEWITHSTEP"],false)
+logger("cn.com.agree.abpm.AbpmServiceWithStep",INFO,["ABPMSERVICEWITHSTEP"],true)
 root(INFO,["ROLLING"])
 
