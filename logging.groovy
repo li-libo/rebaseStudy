@@ -45,7 +45,7 @@ appender("ABPMSERVICEWITHSTEP", RollingFileAppender) {
   }
 }
 
-// 配置
+// 配置logger等级
 logger("cn.com.agree.abpm.AbpmService",INFO,["ABPMSERVICE"],false)
 logger("cn.com.agree.abpm.AbpmServiceWithStep",DEBUG,["ABPMSERVICE"],false)
 root(INFO,["ROLLING"])
