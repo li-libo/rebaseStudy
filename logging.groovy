@@ -19,7 +19,7 @@ appender("ABPMSERVICE", RollingFileAppender) {
     fileNamePattern = "log/AbpmService-%d{yyyy-MM-dd}.%i.log"
     maxFileSize = "100MB"
     maxHistory = 30
-    totalSizeCap = "1GB" 
+    totalSizeCap = "2GB" 
   }
 }
 
