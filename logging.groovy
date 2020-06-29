@@ -39,6 +39,7 @@ root(INFO,["ROLLING"])
 logger("cn.com.agree.abpm.AbpmServiceWithStep",DEBUG,["ABPMSERVICE"],false)
 logger("cn.com.agree.abpm.AbpmService",DEBUG,["ABPMSERVICE"],false)
 logger("cn.com.agree.abpm.AbpmServiceWithStep",DEBUG,["ABPMSERVICEWITHSTEP"],false)
+logger("cn.com.agree.abpm.AbpmServiceWithStep",INFO,["ABPMSERVICEWITHSTEP"],false)
 root(DEBUG,["ROLLING"])
 
 
