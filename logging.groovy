@@ -23,6 +23,6 @@ appender("ABPMSERVICE", RollingFileAppender) {
   }
 }
 
-logger("cn.com.agree.abpm.AbpmService",DEBUG,["ABPMSERVICE"],false)
+logger("cn.com.agree.abpm.AbpmService",INFO,["ABPMSERVICE"],false)
 root(INFO,["ROLLING"])
 
