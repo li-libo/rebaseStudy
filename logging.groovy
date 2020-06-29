@@ -16,13 +16,18 @@ appender("ABPMSERVICE", RollingFileAppender) {
     pattern = "%d %level Thread: %thread - %m%n"
   } 
   rollingPolicy(SizeAndTimeBasedRollingPolicy) {
-    fileNamePattern = "log/AbpmService-%d{yyyy-MM-dd}.%i.log"
+    fileNamePattern = "log/AbpmServiceWithStep-%d{yyyy-MM-dd}.%i.log"
     maxFileSize = "100MB"
     maxHistory = 30
     totalSizeCap = "2GB" 
   }
 }
 
+
 logger("cn.com.agree.abpm.AbpmService",INFO,["ABPMSERVICE"],false)
 root(INFO,["ROLLING"])
+
+logger("cn.com.agree.abpm.AbpmServiceWithStep",DEBUG,["ABPMSERVICE"],false)
+root(DEBUG,["ROLLING"])
+
 
