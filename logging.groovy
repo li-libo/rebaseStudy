@@ -1,5 +1,5 @@
 scan("30 seconds")
-
+//日志文件设定
 appender("ROLLING", RollingFileAppender) {
   encoder(PatternLayoutEncoder) {
     pattern = "%d %level %thread %mdc %logger{35} - %m%n"
