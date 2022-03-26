@@ -22,7 +22,7 @@ appender("ABPMSERVICE", RollingFileAppender) {
     totalSizeCap = "2GB" 
   }
 }
-
+//单独输出AbpmService日志
 logger("cn.com.agree.abpm.AbpmService",INFO,["ABPMSERVICE"],false)
 root(INFO,["ROLLING"])
 
