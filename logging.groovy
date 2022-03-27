@@ -23,8 +23,8 @@ appender("ABPMSERVICE", RollingFileAppender) {
   }
 }
 //单独输出AbpmService日志
-//test
-//master
+//test1
+//master1
 logger("cn.com.agree.abpm.AbpmService",INFO,["ABPMSERVICE"],false)
 root(INFO,["ROLLING"])
 
